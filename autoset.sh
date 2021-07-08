@@ -2,7 +2,7 @@
 
 cd `dirname $0`
 
-ln -s ./.tmux ~/.tmux
-ln -s ./.tmux.conf ~/.tmux.conf
+ln -s $(pwd)/.tmux ~/.tmux
+ln -s $(pwd)/.tmux.conf ~/.tmux.conf
 
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm $(pwd)/.tmux/plugins/tpm
